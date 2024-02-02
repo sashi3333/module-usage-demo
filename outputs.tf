@@ -9,3 +9,8 @@ output "subnets" {
 output "countofsubnets" {
     value = length(aws_subnet.subnets)
 }
+
+output "tags" {
+    value = aws_vpc.ntiervpc.tags
+  
+}
