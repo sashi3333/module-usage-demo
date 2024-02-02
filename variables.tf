@@ -5,7 +5,7 @@ variable "var_region" {
 
 variable "vpcrange" {
     type = string
-    #default = "10.10.0.0/16"
+    default = "10.10.0.0/16"
 }
 
 

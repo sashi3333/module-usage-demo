@@ -1,7 +1,3 @@
-resource "aws_vpc" "myvpc" {
-    cidr_block = var.vpcrange
-}
-
 resource "aws_vpc" "ntiervpc" {
     cidr_block = var.vpcrange
     tags = {
@@ -19,5 +15,5 @@ resource "aws_subnet" "subnets" {
     }
     availability_zone = var.subnet_azs[count.index]
     depends_on = [ 
-        aws_vpc.myvpc ]
+        aws_vpc.ntiervpc ]
 }
