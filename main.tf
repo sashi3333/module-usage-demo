@@ -1,7 +1,7 @@
 resource "aws_vpc" "ntiervpc" {
     cidr_block = var.vpcrange
     tags = {
-        Name = "ntier"
+        Name = var.vpctag
     }      
 }
 

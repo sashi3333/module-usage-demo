@@ -22,3 +22,8 @@ variable "subnet_azs" {
     type = list(string)
   
 }
+
+variable "vpctag" {
+    type = string
+    default = "ntier" 
+}
